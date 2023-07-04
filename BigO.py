@@ -1,14 +1,14 @@
 #BigO
 
-def linear_search (1st, target):
+def linear_search (list, target):
     low = 0
-    high = len(1st) - 1
+    high = len(list) - 1
 
     while low <= high:
         mid = (low + high) // 2
-        guess = 1st [mid]
+        guess = list [mid]
 
-        if guess == target;
+        if guess == target:
             return True
         elif guess < target:
             low = mid + 1
