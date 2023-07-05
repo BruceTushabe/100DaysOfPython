@@ -1,4 +1,4 @@
-public class BigO {
+public class BigO{
 
     public static boolean binarySearch (int[] arr, int target) {
 
@@ -23,7 +23,9 @@ public class BigO {
 
             }
 
-        return false
+            }
+
+        return false;
 
         }
 
