@@ -2,8 +2,6 @@
 
 import java.util.*;
 
-
-
 public class linked {
 
     // driver code 
@@ -22,7 +20,6 @@ public class linked {
         ll.addLast("C");
         ll.addFirst("D");
         ll.add(2, "E");
-
 
         System.out.println(ll);
 

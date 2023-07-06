@@ -37,7 +37,4 @@ linked_list.append(4)
 
 # Display the linkedlist
 
-# linked_list.display() # type: ignore
-
-
-print(LinkedList)
+linked_list.display() # type: ignore
