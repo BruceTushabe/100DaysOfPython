@@ -13,15 +13,15 @@ sia = SentimentIntensityAnalyzer()
 # Define chatbot patterns and responses
 chatbot_pairs = [
     [
-        r"hi|hey|hello",
-        ["Hello!", "Hi there!", "Greetings!"]
+        r"hi|hey|hello|waguan",
+        ["Hello!", "Hi there!", "Greetings!", "naguan yo!"]
     ],
     [
         r"what is your name?",
-        ["You can call me ChatBot.", "I'm ChatBot, nice to meet you!"]
+        ["You can call me ChatBot, the great!.", "I'm the famous ChatBot, nice to meet you!"]
     ],
     [
-        r"how are you ?",
+        r"how are you?|warap yoo!",
         ["I'm good, thanks! How about you?", "I'm doing well, thank you!"]
     ],
     [
@@ -33,17 +33,23 @@ chatbot_pairs = [
         ["I'm a chatbot, I don't have an age."]
     ],
     [
-        r"(.*) (location|city) ?",
+        r"(.*) (location|city|village|area|country|Uganda) ?",
         ["I'm a chatbot, I exist in the digital world."]
     ],
     [
-        r"(.*) (created|made) you ?",
-        ["I was created by OpenAI using Python and NLTK."]
+        r"(.*) (created|made|coded) you ?",
+        ["I was created by Agrivibes using Python and NLTK."]
+    ],
+    [
+        r"(.*) (farm|farming|agriculture|garden|farms)?",
+        ["I love agriculture and I am excited to help you with information on that! "] 
+
     ],
     [
         r"(.*)",
         ["Sorry, I didn't quite understand that.", "Can you please rephrase that?"]
     ]
+    
 ]
 
 
