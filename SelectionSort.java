@@ -12,6 +12,7 @@ public class SelectionSort {
                 smallestIndex = i;
 
             }
+        }
 
             return smallestIndex;
         }
@@ -20,8 +21,8 @@ public class SelectionSort {
         List<Integer> newArr = new ArrayList<>();
         while (!arr.isEmpty()) {
 
-            int smallest = findSmallest();
-            newArr.add(arr.remove(smallestIndex));
+            int smallest = findSmallest(arr);
+            newArr.add(arr.remove(smallest));
         }
 
         return newArr;
@@ -36,9 +37,8 @@ public class SelectionSort {
         arr.add(10);
 
         List<Integer> sortedArr = selectionSort(arr);
-        System.out.printLn(sortedArr);
+        System.out.println(sortedArr);
 
     }
     
-}
 }
