@@ -48,6 +48,10 @@ chatbot_pairs = [
     [
         r"(.*)",
         ["Sorry, I didn't quite understand that.", "Can you please rephrase that?"]
+    ],
+    [
+        r"(.*)(wow | thanks | awesome | great)",
+        ["You are definitly awesome!"]
     ]
     
 ]
