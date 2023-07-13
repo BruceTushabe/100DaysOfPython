@@ -46,13 +46,13 @@ chatbot_pairs = [
 
     ],
     [
+        r"(.*) (type| types | ways | methods)?",
+        ["1. Crop Farming, Livestock Farming, Agribusiness, Fish Farming"]
+    ],
+    [
         r"(.*)",
         ["Sorry, I didn't quite understand that.", "Can you please rephrase that?"]
     ],
-    [
-        r"(.*)(wow | thanks | awesome | great)",
-        ["You are definitly awesome!"]
-    ]
     
 ]
 
