@@ -1,36 +1,21 @@
-public class binary_search {
+public int binary_search(
+    int[] sortedArray, int key, int low, int high) {
+        int index = Integer.MAX_VALUE;
 
-    public static int binarySearch(int[] nums, int target) {
-        int low = 0;
+        while (low <= high) [
+            int mid = low + ((high - low) / 2);
+            if (sortedArray[mid] < key) {
+                low = mid + 1;
 
-        int high = nums.length - 1;
+            } else if (sortedArray[mid] > key ) {
 
-        while (low <= high) {
-            
-            int mid = (high + low) / 2;
-            
-            
-            if (nums[mid] == target) {
-            return mid;}
-            
-            
-            if (target < nums[mid]){
-            high = mid - 1;
-        
-        } else {
-            low = mid + 1;
-        }
-
+                high = mid - 1;
+            } else if (sortedArray[mid] == key) {
+                index = mid;
+                break;
+            }
     }
 
-    return -1;
+    return index;
 }
 
-public static void main(String[] args){
-    int [] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int target = 5;
-    int result = binarySearch(nums, target);
-    System.out.println(result);
-}
-
-}
