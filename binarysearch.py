@@ -1,21 +1,28 @@
-def binary_search(list, item):
-    low = 0
-    high = len(list)-1
+from typing import List
 
+def binary_search(self, nums: List[int], target: int) -> int:
+    #Set search space equal to sorted list
+    low = 0
+    high = len(nums) - 1
 
     while low <= high:
-        mid = (low + high)
-        guess = list[mid]
-        if guess == item:
+        # Get the middle element of the search space
+
+        mid = (high + low) // 2
+
+        # Compare middle element to target
+
+        if nums[mid] == target:
             return mid
-        if guess > item:
+        
+        if target < nums[mid]:
             high = mid - 1
-        else:
+
+        else :
             low = mid + 1
-    return None
-my_list = [1, 3, 5, 7, 9]
+    return -1 
 
-print (binary_search(my_list, 3)) # => 1
-print (binary_search(my_list, -1)) # => None
+nums = [1,2,3,4,5,6,7,8,9,10]
 
+print(binary_search(nums, target))
 

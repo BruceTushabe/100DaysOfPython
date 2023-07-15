@@ -11,3 +11,5 @@ ratings = pd.read_table('ml-1m/ratings.dat', sep= '::', header= None, names=rnam
 mnames = [ 'movie_id', 'title', 'genres']
 movies = pd.read_table('ml-1m/movies.dat', sep='::', header= None, names= mnames)
 
+
+
