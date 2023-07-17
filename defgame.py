@@ -9,7 +9,7 @@ if answer.lower() == 'yes':
 
     if answer.lower() == 'python':
         score += 1
-        print('Correcr')
+        print('Correct')
 
     else: 
         print('Incorrent')
