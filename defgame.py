@@ -12,9 +12,9 @@ if answer.lower() == 'yes':
         print('Correcr')
 
     else: 
-        print('Incoreent')
+        print('Incorrent')
 
-    answer = input('2. Do you follow me on Twitter?')
+    answer = input('2. Do you think  I am on Twitter?')
     if answer.lower() == 'yes':
         score += 1
         print('Correct')
