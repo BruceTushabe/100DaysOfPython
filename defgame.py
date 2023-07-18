@@ -19,7 +19,7 @@ if answer.lower() == 'yes':
         score += 1
         print('Correct')
     else:
-        print('Incorrect : (')
+        print('Incorrect')
     
     answer = input('3. Do you think I am on Youtube?')
 
