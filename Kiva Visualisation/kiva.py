@@ -4,7 +4,7 @@ import pandas as pd
 
 import seaborn as sns
 
-df = pd.read.csv('kiva_data.csv')
+df = pd.read_csv('kiva_data.csv')
 
 df.head()
 
