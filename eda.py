@@ -10,7 +10,12 @@ df = pd.read_csv("car_data.csv")
 
 df = df.drop(['Engine Fuel Type', 'Market Category', 'Vehicle Style', 'Popularity', 'Number of Doors', 'Vehicle Size'], axis=1)
 
-print(df.head(5))
+df.Make.value_counts().nlargest(40).plot(kind='bar', figsize=(10,5))
+plt.title("Number of cars by make")
+plt.ylabel('Number of Cars')
+plt.xlabel('Make')
+
+plt.show()
 
 
 
