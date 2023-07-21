@@ -8,8 +8,9 @@ sns.set(color_codes=True)
 
 df = pd.read_csv("car_data.csv")
 
-# To display the top 5 rows
+df = df.drop(['Engine Fuel Type', 'Market Category', 'Vehicle Style', 'Popularity', 'Number of Doors', 'Vehicle Size'], axis=1)
 
-df.head(5)
+print(df.head(5))
+
 
 
