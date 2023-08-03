@@ -13,8 +13,10 @@ study_hours = [10.0,11.5,9.0,16.0,9.25,1.0,11.5,9.0,8.5,14.5,15.5,
 grades = np.array(data)
 
 student_data = np.array([study_hours, grades])
+df_students = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic', 'Jimmie', 
+                                     'Rhonda', 'Giovanni', 'Francesca', 'Rajab', 'Naiyana', 'Kian', 'Jenny',
+                                     'Jakeem','Helena','Ismat','Anila','Skye','Daniel','Aisha'],
+                            'StudyHours':student_data[0],
+                            'Grade':student_data[1]})
 
-
-shep = student_data.shape
-
-print(shep)
+print(df_students)
